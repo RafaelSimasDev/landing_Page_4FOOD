@@ -1,0 +1,2968 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+ scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    overflow-x: hidden;
+    color: #962929;
+}
+
+:root{
+    --vinho: #962929;
+    --white: #fcfcfc;
+    --vinho2: #ef3030;
+}
+
+#bodyId.active{
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    /* border: 2px solid red; */
+    /* background: var(--white); */
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    padding: 0px 30px;
+    /* position: fixed;
+    top: 0; */
+    background-color: var(--white);
+    /* border: solid 3px rgb(3, 1, 1); */
+}
+
+header img{
+    /* border: 2px solid red; */
+    width: 180px;
+    height: 8vh;
+}
+
+header #menuResponsivo ul{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* border: solid 3px rgb(3, 1, 1); */
+}
+
+header #menuResponsivo ul li a{
+    color: #962929;
+    transition: 0.5s;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+header #menuResponsivo ul li a:hover{
+    color: var(--vinho2);
+}
+
+header .hamburguer{
+    width: 30px;
+    height: 30px;
+    /* background-color: black; */
+    /* border: solid 2px rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    
+   
+}
+
+header .hamburguer .bar{
+    width: 100%;
+    height: 2.5px;
+    /* background-color: black; */
+    background-color: #962929;
+    
+}
+
+header #menuResponsivo.active{
+    display: flex;
+    background-color: var(--white);
+    justify-content: center;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    align-items: center;
+    /* overflow: hidden; */
+    /* gap: 3rem; */
+    /* border: solid 2px rgb(9, 255, 0); */
+}
+
+main{
+    width: 100%;
+   display:flex;
+   flex-direction: column;
+   gap: 2rem;
+    /* height: 100%; */
+    /* border: solid 3px rgb(3, 1, 1); */
+    /* margin-top: 10%; */
+}
+
+main section.home{
+    /* border: solid 3px rgb(3, 1, 1); */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 2% 2%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main section .home-filho-nova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 3px rgb(3, 1, 1); */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--vinho), var(--vinho-hover));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main section .home-text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 4px rgb(189, 3, 165); */
+}
+
+main section .home-text > h4{
+  font-size: 2rem; 
+  font-weight: 500;
+  color: var(--vinho); 
+  /* border: solid 2px rgb(56, 168, 57); */
+}
+
+main section .span-1{
+    color: var(--vinho2);
+    font-weight: bold;
+}
+
+main section .home-text > h1{
+    font-size: 2.5rem; 
+    font-weight: 400;
+    color: var(--vinho); 
+    /* border: solid 2px rgb(255, 0, 225); */
+}
+
+main section img{
+    display: flex;
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px rgb(76, 0, 255); */
+}
+
+main section.destaque{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* flex-wrap: wrap; */
+}
+
+main section .destaque-filho-um{
+    /* border: 1px solid red; */
+    margin: 2% 2%;
+}
+
+main section .destaque-filho-um h2{
+    /* border: 1px solid rgb(0, 255, 81); */
+    color: #962929;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main section .destaque-filho-dois{
+    /* border: 1px solid red; */
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+    padding: 2% 2%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+main section .destaque-1{
+    /* border: 2px solid rgb(8, 174, 61); */
+    box-shadow: 0.05rem 0 0.5rem var(--vinho);
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    flex-basis: calc(25% - 1rem);
+}
+
+main section .destaque-1 img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+main section .destaque-1 a{
+    /* border: 2px solid rgb(8, 174, 61); */
+    color: #962929;
+}
+
+main section .destaque-1 a h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+main section .destaque-1 a h4:hover{
+    color: var(--vinho2);
+}
+
+main section.combos{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main section .combos-filho-um{
+    margin: 2% 2%;
+}
+
+main section .combos-filho-um h2{
+    /* border: 1px solid rgb(0, 255, 81); */
+    color: #962929;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main section .combos-filho-dois{
+    /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2.5rem; */
+    width: 100%;
+    height: 70vh;
+}
+
+main section .combos-div1{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: 1rem; */
+    align-items: center;
+}
+
+main section .combos-div1 .image-01{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 50vh;
+    border-radius: 10%;
+}
+
+main section .combos-div1 .image-02{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 50vh;
+    border-radius: 10%;
+}
+
+main section .combos-div1 .icons-combos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 50%;
+    height: 7vh;
+    border-radius: 20px;
+    color: white;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+main section .combos-div1 .icons-combos:hover {
+    /* background-color: var(--white); */
+    color:  var(--vinho);
+    border: 3px solid var(--vinho);
+    transition: 0.3s;
+}
+
+main section .combos-div1 .icons-combos .esqueci-urgente h4{
+    font-size: 1.2rem;
+    font-weight: 500;    
+    color: #962929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+main section .combos-div1 .icons-combos .esqueci-outro{
+    font-size: 1.1rem;
+    font-weight: 500;  
+    color: var(--white);
+    /* border: 1px solid red; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 10px;   */
+}
+
+main section .combos-div1 .icons-combos a i{
+    color: #962929;
+    font-size: 2rem;
+}
+
+main section .combos-div1 h6{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+main section.refeicoes{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main section .refeicoes-1-filho{
+    margin: 2% 2%
+}
+
+main section .refeicoes-1-filho h2{
+    /* border: 1px solid rgb(0, 255, 81); */
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main section .refeicoes-2-filho{
+    /* border: 2.5px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+main section .refeicoes-div{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 30%;
+    height: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: 1rem; */
+    align-items: center;
+}
+
+main section .refeicoes-div img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 45vh;
+    border-radius: 10%;
+}
+
+main section .refeicoes-div h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+main section .refeicoes-div h5{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+main section .refeicoes-div .refeicoes-2-filho-texto-menor{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+
+main section .refeicoes-div .refeicoes-2-filho-texto-menor h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 5%;
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: var(--vinho); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    transition: 0.3s;
+    background: var(--white);
+    color: #962929;
+    border: 1.5px solid #962929;
+}
+
+main section.porcoes{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main section .porcoes-1-filho{
+    margin: 2% 2%;
+}
+
+main section .porcoes-1-filho h2{
+    /* border: 1px solid rgb(0, 255, 81); */
+    color: #962929;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main section .porcoes-2-filho{
+    /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2.5rem; */
+    width: 100%;
+    height: 70vh;
+}
+
+main section .porcoes-div{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+main section .porcoes-div img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 45vh;
+    border-radius: 10%;
+}
+
+main section .porcoes-div h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main section .porcoes-div h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 2rem; */
+    align-items: center;
+    width: 50%;
+    height: 4vh;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    /* cursor: pointer; */
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main section .btn10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 7%;
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: var(--vinho); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn10:hover{
+    transition: 0.3s;
+    background: var(--white);
+    color: #962929;
+    border: 1.5px solid #962929;
+} 
+
+footer{
+    margin-top: 10%;
+    /* border: blue solid 2px; */
+    background-color: #f0eeee;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .footer{
+    padding-top: 10px;
+    /* border: solid 2px red; */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    /* box-shadow: 0 0.02rem 0.3rem var(--vinho); */
+}
+
+footer .footer .lado-esquerdo{
+    /* border: blue solid 2px; */
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer .lado-esquerdo img{
+    /* border: solid green 2px; */
+    width: 50%;
+    /* height: 80%; */
+}
+
+footer .footer .meio{
+    /* border: solid green 2px; */
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+footer .footer .meio h4{
+    /* border: solid green 2px; */
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer .footer .meio .icons-contato{
+    /* border: solid rgb(21, 0, 128) 2px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 0.5rem;
+    height: 20%;
+}
+
+footer .footer .meio .icons-contato a{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.frases-fale-conosco{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.fale-conosco-icons h6{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+footer .footer .lado-direito{
+    width: 32%;
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 1.2rem; */
+    gap: 3rem;
+}
+
+footer .footer .lado-direito h4{
+   text-align: center;
+   /* border: solid rgb(0, 166, 255) 2px;  */
+   font-size: 1.5rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   /* height: 7vh; */
+}
+
+footer .footer .lado-direito img{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    width: 90%;
+    height: 60%;
+}
+
+footer .parte-final{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .parte-final h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+@media screen and ( max-device-width: 480px){
+
+
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+
+    header #menuResponsivo ul{
+        flex-direction: column;
+        
+    }
+
+    header .nav-itemUm{
+        display: none;
+    }
+
+    header .nav-itemDois{
+        display: none;
+    }
+
+    header .nav-itemTres{
+        display: none;
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1.0rem;
+        width: 100%;
+        margin-top: 10px;
+         /* border: #962929 2px solid; */
+    
+    }
+
+    main section.home{
+        height: 25vh;
+        display: flex;
+        /* border: #962929 2px solid; */
+    }
+
+    main section .home-text{
+        width: 60%;
+        text-align: center;
+    }
+
+    main section .home-text > h4{
+        font-size: 0.9rem; 
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+      
+    main section .home-text > h1{
+          font-size: 0.8rem; 
+          /* border: solid 2px rgb(255, 0, 225); */
+          /* align-items: center; */
+    }
+
+    main section img{
+        display: flex;
+        padding: 2%;
+        width: 150px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 2px rgb(76, 0, 255); */
+    }
+
+    main section.destaque{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    
+    main section .destaque-filho-um h2{
+        /* border: 1px solid rgb(0, 255, 81); */
+        color: #962929;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    main section .destaque-filho-dois{
+        /* border: 1px solid red; */
+        background: var(--white);
+        flex-wrap: wrap;
+        gap: 1rem;
+        display: flex;
+        width: 100%;
+        padding: 2% 2%;
+        height: 25vh;
+    }
+    
+    main section .destaque-1{
+        /* border: 2px solid rgb(8, 174, 61); */
+        box-shadow: 0.05rem 0 0.5rem var(--vinho);
+        display: flex;
+        width: 100%;
+        gap: 0.5rem;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        flex-basis: calc(50% - 1rem);
+    }
+    
+    main section .destaque-1 img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
+    main section .destaque-1 a h4{
+        font-size: 0.6rem;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+
+    main section.combos{
+        /* border: 1.5px red solid ; */
+        align-items: center;
+        height: 35vh;
+        width: 100%;
+        gap: 0rem;
+    }
+    
+    main section .combos-filho-um{
+        margin: 0% 0%;
+        /* border: 2px solid rgb(0, 255, 81); */
+        align-items: center;
+        text-align: center;
+        height: 22%;
+        width: 50%;
+    }
+
+    main section .combos-filho-um h2{
+        font-size: 1.4rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section .combos-filho-dois{
+        /* border: 2px solid rgb(0, 255, 81); */
+        height: 100%;
+        gap: 2rem;
+    }
+    
+    main section .combos-div1{
+        /* border: solid 2px blue; */
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    main section .combos-div1 .image-01{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 65%;
+        border-radius: 10%;
+    }
+    
+    main section .combos-div1 .image-02{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 65%;
+        border-radius: 10%;
+    }
+    
+    main section .combos-div1 .icons-combos{
+        width: 80%;
+        height: 3vh;
+        /* border: solid 2px blue; */
+    }    
+     
+    
+    
+    main section .combos-div1 .icons-combos .esqueci-outro{
+        font-size: 1.5rem;
+        font-weight: 500;  
+        color: var(--white);
+        /* border: 1px solid red; */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* padding-top: 10px;   */
+    }
+
+    main section .combos-div1 .icons-combos .esqueci-urgente h4{
+        font-size: 0.55rem;
+        font-weight: 500;    
+        color: #962929;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* width: 100%; */
+        /* border: 1px solid red; */
+        height: 100%;
+        width: 100%;
+    }
+    
+    main section .combos-div1 .icons-combos .esqueci-outro{
+        /* border: solid 1px green; */
+        display:none;
+    }
+    
+    main section .combos-div1 .icons-combos a i{
+        color: #962929;
+        align-items: center;
+        border: 1px solid red;
+    }
+    
+    main section .combos-div1 h6{
+        font-size: 0.7rem;
+        font-weight: 600;
+        /* margin-bottom: 5%; */
+    }
+
+    main section.refeicoes{
+         align-items: center;
+         height: 50vh;
+         width: 100%;
+         gap: 0rem;
+    }
+    
+    main section .refeicoes-1-filho{
+        margin: 2% 2%;
+        text-align: center;
+        height: 15%;
+        width: 50%;
+    }
+    
+    main section .refeicoes-1-filho h2{
+        font-size: 1.4rem;
+        font-weight: 500;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main section .refeicoes-2-filho{
+        /* border: 2.5px solid rgb(0, 255, 81); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+    main section .refeicoes-div{
+        /* border: solid 2px blue; */
+        display: flex;
+        width: 30%;
+        height: 100%;
+        gap: 0.3rem;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: calc(100% - 1rem);
+    }
+    
+    main section .refeicoes-div img{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        width: 50%;
+        height: 50%;
+        border-radius: 10%;
+    }
+    
+    main section .refeicoes-div h3{
+        /* border: solid 2px blue; */
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    main section .refeicoes-div h5{
+        /* border: solid 2px blue; */
+        font-size: 0.8rem;
+        font-weight: 500;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main section .refeicoes-div .refeicoes-2-filho-texto-menor{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        /* border: solid 2px blue; */
+        width: 60%;
+        height: 5vh;      
+    }
+    
+    main section .refeicoes-div .refeicoes-2-filho-texto-menor h4{
+        font-size: 1rem;
+        font-weight: 500;
+        height: 100%;
+        width: 50%;
+        /* border: solid 2px blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn1{
+        width: 40%;
+        height: 10%;
+        border-radius: 50px; /* Bordas arredondadas */
+        background-color: var(--vinho); /* Cor de fundo */
+        color: white; /* Cor do texto */
+        border: none;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .btn1:hover{
+        transition: 0.3s;
+        background: var(--white);
+        color: #962929;
+        border: 1.5px solid #962929;
+    }
+
+    main section.porcoes{
+        /* border: 1.5px red solid ; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 45vh;
+    }
+    
+    main section .porcoes-1-filho{
+        margin: 0% 0%;
+        /* border: 2px solid rgb(0, 255, 81); */
+        align-items: center;
+        text-align: center;
+        height: 22%;
+        width: 100%;
+    }
+    
+    main section .porcoes-1-filho h2{
+        /* border: 2px solid rgb(0, 255, 81); */
+        font-size: 1.4rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main section .porcoes-2-filho{
+        /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 70vh;
+    }
+    
+    main section .porcoes-div{
+        /* border: solid 2px blue; */
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0rem;
+        align-items: center;
+    }
+    
+    main section .porcoes-div img{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 25vh;
+        border-radius: 10%;
+        /* border: solid 2px blue; */
+    }
+
+    main section .porcoes-div h3{
+        font-size: 0.55rem;
+        /* border: solid 2px blue; */
+        font-weight: 600;
+    }
+    
+    main section .porcoes-div h5{
+        /* border: solid 2px blue; */
+        text-align: center;
+        width: 100%;
+        font-size: 0.55rem;
+        font-weight: 500;
+        /* border: solid 2px blue; */
+    }
+    
+    main section .porcoes-div .porcoes-2-filho-texto-menor{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: solid 2px blue; */
+        /* gap: 2rem; */
+        align-items: center;
+        width: 80%;
+        height: 3.5vh;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    main section .porcoes-div .porcoes-2-filho-texto-menor h4{
+        font-size: 0.55rem;
+        /* border: solid 2px blue; */
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 3vh;
+    }
+   
+    main section .btn10{
+        width: 60%;
+        height: 3vh;
+        border-radius: 50px; 
+        border: 10px solid #96298b;
+        background-color: var(--vinho); 
+        color: white; 
+        border: none;
+        text-align: center;
+        font-size: 0.65rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    main section .btn10:hover{
+        transition: 0.3s;
+        background: var(--white);
+        color: #962929;
+        border: 1.5px solid #962929;
+    }    
+    
+    footer{
+        margin-top: 10%;
+        /* border: blue solid 2px; */
+        background-color: #f0eeee;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .footer{
+        padding-top: 0px;
+        /* border: solid 2px red; */
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        /* box-shadow: 0 0.02rem 0.3rem var(--vinho); */
+    }
+    
+    footer .footer .lado-esquerdo{
+        /* border: blue solid 2px; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .footer .lado-esquerdo img{
+        /* border: solid green 2px; */
+        width: 60%;
+        /* height: 80%; */
+    }
+    
+    footer .footer .meio{
+        /* border: solid green 2px; */
+        /* height: 100%; */
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    footer .footer .meio h4{
+        /* border: solid green 2px; */
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    
+    footer .footer .meio .icons-contato{
+        /* border: solid rgb(21, 0, 128) 2px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* align-items: center; */
+        width: 70%;
+        gap: 0.1rem;
+        height: 15%;
+    }
+    
+    footer .footer .meio .icons-contato a{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        width: 13%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .frases-fale-conosco{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.2rem;
+    }
+    
+    .fale-conosco-icons h6{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        font-size:0.7rem;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    footer .footer .lado-direito{
+        width: 32%;
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display:none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* gap: 1.2rem; */
+        gap: 1rem;
+    }
+    
+    footer .footer .lado-direito h4{
+       text-align: center;
+       /* border: solid rgb(0, 166, 255) 2px;  */
+       font-size: 0.5rem;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       /* height: 7vh; */
+    }
+    
+    footer .footer .lado-direito img{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    footer .parte-final{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vh;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .parte-final h3{
+        font-size: 0.4rem;
+        font-weight: 300;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 725px){
+
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+    
+    header #menuResponsivo ul{
+        flex-direction: column;
+    }
+
+    header #menuResponsivo ul li a{
+        font-size: 1.5rem;
+    }
+
+    header .nav-itemUm{
+        display: none;
+    }
+
+    header .nav-itemDois{
+        display: none;
+    }
+
+    header .nav-itemTres{
+        display: none;
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100vw;
+        margin-top: 15%;
+    }
+
+    main section.home{
+        height: 40vh;
+        display: flex;
+    }
+
+    main section .home-text > h4{
+        font-size: 1.2rem; 
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+      
+    main section .home-text > h1{
+          font-size: 0.9rem; 
+          /* border: solid 2px rgb(255, 0, 225); */
+    }
+
+    main section img{
+        display: flex;
+        padding: 2%;
+        width: 210px;
+        height: 140px;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 2px rgb(76, 0, 255); */
+    }
+
+    main section.destaque{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* flex-wrap: wrap; */
+    }
+    
+    main section .destaque-filho-um{
+        /* border: 1px solid red; */
+        margin: 2% 2%;
+    }
+    
+    main section .destaque-filho-um h2{
+        /* border: 1px solid rgb(0, 255, 81); */
+        color: #962929;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    main section .destaque-filho-dois{
+        /* border: 1px solid red; */
+        gap: 1rem;
+        display: flex;
+        width: 100%;
+        padding: 2% 2%;
+        height: 35vh;
+        flex-wrap: wrap;
+    }
+    
+    main section .destaque-1{
+        /* border: 2px solid rgb(8, 174, 61); */
+        box-shadow: 0.05rem 0 0.5rem var(--vinho);
+        display: flex;
+        width: 100%;
+        gap: 0.5rem;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        flex-basis: calc(33% - 1rem);
+    }
+    
+    main section .destaque-1 img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
+    main section .destaque-1 a{
+        /* border: 2px solid rgb(8, 174, 61); */
+        color: #962929;
+    }
+    
+    main section .destaque-1 a h4{
+        font-size: 1rem;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+    
+    main section .destaque-1 a h4:hover{
+        color: var(--vinho2);
+    }
+
+    main section.combos{
+        /* border: 1.5px red solid ; */
+        align-items: center;
+    }
+    
+    main section .combos-filho-um{
+        margin: 2% 0%;
+    }
+    
+    main section .combos-filho-dois{
+        /* border: 2px solid rgb(0, 255, 81); */
+        height: 60vh;
+    }
+    
+    main section .combos-div1{
+        /* border: solid 2px blue; */
+        display: flex;
+        gap: 1.5rem;
+        width: 45%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main section .combos-div1 .image-01{
+        width: 180px;
+        height: 180px;
+    }
+    
+    main section .combos-div1 .image-02{
+        width: 180px;
+        height: 180px;
+    }
+    
+    main section .combos-div1 .icons-combos{
+        width: 150px;
+        height: 4vh;
+    }    
+
+    main section .combos-div1 .icons-combos .esqueci-urgente h4{
+        font-size: 0.75rem;
+    }
+    
+    main section .combos-div1 .icons-combos .esqueci-outro{
+        /* border: solid 1px green; */
+        display:none;
+    }
+    
+    main section .combos-div1 h6{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+
+    main section.refeicoes{
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        gap: 0rem;
+   }
+   
+   main section .refeicoes-1-filho{
+       margin: 2% 2%;
+       text-align: center;
+       height: 15%;
+       width: 50%;
+   }
+   
+   main section .refeicoes-1-filho h2{
+       font-size: 1.4rem;
+       font-weight: 500;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   main section .refeicoes-2-filho{
+       /* border: 2.5px solid rgb(0, 255, 81); */
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       gap: 1.5rem;
+       height: 80vh;
+       flex-wrap: wrap;
+   }
+   
+   main section .refeicoes-div{
+       /* border: solid 2px blue; */
+       display: flex;
+       width: 30%;
+       height: 100%;
+       /* gap: 1rem; */
+       flex-direction: column;
+       align-items: center;
+       /* justify-content: space-between; */
+       flex-basis: calc(100% - 1rem);
+       gap: 1rem;
+   }
+   
+   main section .refeicoes-div img{
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+       width: 40%;
+       height: 50%;
+       border-radius: 10%;
+   }
+   
+   main section .refeicoes-div h3{
+       /* border: solid 2px blue; */
+       font-size: 1.2rem;
+       font-weight: 700;
+   }
+   
+   main section .refeicoes-div h5{
+       /* border: solid 2px blue; */
+       font-size: 0.8rem;
+       font-weight: 400;
+       width: 100%;
+       line-height: 0.8rem;
+       height: 7vh;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor{
+       display: flex;
+       gap: 1rem;
+       align-items: center;
+       /* border: solid 2px blue; */
+       width: 60%;
+       height: 4vh;      
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor h4{
+       font-size: 0.8rem;
+       font-weight: 500;
+       height: 100%;
+       width: 50%;
+       /* border: solid 2px blue; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .btn1{
+       width: 30%;
+       height: 4vh;
+       border-radius: 50px; /* Bordas arredondadas */
+       background-color: var(--vinho); /* Cor de fundo */
+       color: white; /* Cor do texto */
+       border: none;
+       text-align: center;
+       font-size: 0.8rem;
+       font-weight: 500;
+       cursor: pointer;
+   }
+   
+   .btn1:hover{
+       transition: 0.3s;
+       background: var(--white);
+       color: #962929;
+       border: 1.5px solid #962929;
+   }
+   
+   main section.porcoes{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+main section .porcoes-1-filho{
+    margin: 0% 0%;
+    /* border: 2px solid rgb(0, 255, 81); */
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+
+main section .porcoes-1-filho h2{
+    /* border: 2px solid rgb(0, 255, 81); */
+    font-size: 1.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .porcoes-2-filho{
+    /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+main section .porcoes-div{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0rem;
+    align-items: center;
+}
+
+main section .porcoes-div img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 30vh;
+    border-radius: 10%;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div h3{
+    font-size: 0.85rem;
+    /* border: solid 2px blue; */
+    font-weight: 600;
+}
+
+main section .porcoes-div h5{
+    /* border: solid 2px blue; */
+    text-align: center;
+    width: 100%;
+    font-size: 0.65rem;
+    font-weight: 500;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid 2px blue; */
+    /* gap: 2rem; */
+    align-items: center;
+    width: 80%;
+    height: 3.5vh;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor h4{
+    font-size: 0.65rem;
+    /* border: solid 2px blue; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+}
+
+main section .btn10{
+    width: 60%;
+    height: 3vh;
+    border-radius: 50px; 
+    border: 10px solid #96298b;
+    background-color: var(--vinho); 
+    color: white; 
+    border: none;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main section .btn10:hover{
+    transition: 0.3s;
+    background: var(--white);
+    color: #962929;
+    border: 1.5px solid #962929;
+} 
+
+footer{
+    margin-top: 10%;
+    /* border: blue solid 2px; */
+    background-color: #f0eeee;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .footer{
+    padding-top: 0px;
+    /* border: solid 2px red; */
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    /* box-shadow: 0 0.02rem 0.3rem var(--vinho); */
+}
+
+footer .footer .lado-esquerdo{
+    /* border: blue solid 2px; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer .lado-esquerdo img{
+    /* border: solid green 2px; */
+    width: 45%;
+    /* height: 80%; */
+}
+
+footer .footer .meio{
+    /* border: solid green 2px; */
+    /* height: 100%; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+footer .footer .meio h4{
+    /* border: solid green 2px; */
+    height: 12%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+footer .footer .meio .icons-contato{
+    /* border: solid rgb(21, 0, 128) 2px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    width: 60%;
+    gap: 0.1rem;
+    height: 15%;
+}
+
+footer .footer .meio .icons-contato a{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.frases-fale-conosco{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 90%;
+    gap: 0.2rem;
+}
+
+.fale-conosco-icons h6{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    font-size:0.7rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+footer .footer .lado-direito{
+    width: 32%;
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display:none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 1.2rem; */
+    gap: 1rem;
+}
+
+footer .footer .lado-direito h4{
+   text-align: center;
+   /* border: solid rgb(0, 166, 255) 2px;  */
+   font-size: 0.5rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   /* height: 7vh; */
+}
+
+footer .footer .lado-direito img{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+footer .parte-final{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .parte-final h3{
+    font-size: 0.5rem;
+    font-weight: 300;
+}
+
+   
+   
+   
+}
+
+@media (min-width: 725px) and (max-width: 1000px){
+    
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+    
+    header #menuResponsivo ul{
+        flex-direction: column;
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .nav-itemUm{
+        display: none;
+    }
+
+    header .nav-itemDois{
+        display: none;
+    }
+
+    header .nav-itemTres{
+        display: none;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100vw;
+        margin-top: 10%;
+    }
+
+    main section.home{
+        height: 50vh;
+    }
+
+    main section .home-filho-nova{
+        justify-content: space-around;
+    }
+
+    main section .home-text{
+        width: 50%;
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+
+    main section .home-text > h4{
+        font-size: 1.5rem; 
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+      
+    main section .home-text > h1{
+          font-size: 1.2rem; 
+          /* border: solid 2px rgb(255, 0, 225); */
+    }
+
+    main section img{
+        display: flex;
+        /* padding: 2%; */
+        width: 360px;
+        height: 240px;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 2px rgb(76, 0, 255); */
+    }
+    /* essa main section está errada, deveria ter especificado melhor o código */
+    
+    main section.destaque{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    
+    main section .destaque-filho-um h2{
+        /* border: 1px solid rgb(0, 255, 81); */
+        color: #962929;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    main section .destaque-filho-dois{
+        /* border: 1px solid red; */
+        background: var(--white);
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        display: flex;
+        width: 100%;
+        padding: 2% 2%;
+        height: 40vh;
+    }
+    
+    main section .destaque-1{
+        /* border: 2px solid rgb(8, 174, 61); */
+        box-shadow: 0.05rem 0 0.5rem var(--vinho);
+        display: flex;
+        width: 100%;
+        /* gap: 1.5rem; */
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        flex-basis: calc(25% - 1rem);
+    }
+    
+    main section .destaque-1 img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
+    main section .destaque-1 a h4{
+        font-size: 1rem;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+    
+    main section.combos{
+        /* border: 1.5px red solid ; */
+        align-items: center;
+    }
+    
+    main section .combos-filho-um{
+        margin: 2% 0%;
+    }
+    
+    main section .combos-filho-dois{
+        /* border: 2px solid rgb(0, 255, 81); */
+        height: 60vh;
+    }
+    
+    main section .combos-div1{
+        /* border: solid 2px blue; */
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main section .combos-div1 .image-01{
+        width: 250px;
+        height: 250px;
+    }
+    
+    main section .combos-div1 .image-02{
+        width: 250px;
+        height: 250px;
+    }
+    
+    main section .combos-div1 .icons-combos{
+        width: 250px;
+        height: 5vh;
+    }    
+     
+    main section .combos-div1 .icons-combos .esqueci-urgente h4{
+        font-size: 1.1rem;
+    }
+    
+    main section .combos-div1 .icons-combos .esqueci-outro{
+        /* border: solid 1px green; */
+        display:none;
+    }
+    
+    main section .combos-div1 h6{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+
+    main section.refeicoes{
+        align-items: center;
+        height: 70vh;
+        width: 100%;
+        gap: 0rem;
+   }
+   
+   main section .refeicoes-1-filho{
+       margin: 2% 2%;
+       text-align: center;
+       height: 15%;
+       width: 50%;
+   }
+   
+   main section .refeicoes-1-filho h2{
+       font-size: 1.4rem;
+       font-weight: 500;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   main section .refeicoes-2-filho{
+       /* border: 2.5px solid rgb(0, 255, 81); */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       gap: 1rem;
+       height: 100%;
+   }
+   
+   main section .refeicoes-div{
+       /* border: solid 2px blue; */
+       display: flex;
+       width: 30%;
+       height: 100%;
+       gap: 0.3rem;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   main section .refeicoes-div img{
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+       width:90%;
+       height: 35vh;
+       border-radius: 10%;
+   }
+   
+   main section .refeicoes-div h3{
+       /* border: solid 2px blue; */
+       font-size: 0.7rem;
+       font-weight: 700;
+   }
+   
+   main section .refeicoes-div h5{
+       /* border: solid 2px blue; */
+       font-size: 0.6rem;
+       font-weight: 400;
+       width: 100%;
+       height: 5vh;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor{
+       display: flex;
+       gap: 0rem;
+       align-items: center;
+       /* border: solid 2px blue; */
+       width: 100%;
+       height: 5vh;      
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor h4{
+       font-size: 0.8rem;
+       font-weight: 500;
+       height: 100%;
+       width: 50%;
+       /* border: solid 2px blue; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .btn1{
+       width: 70%;
+       height: 10%;
+       border-radius: 50px; /* Bordas arredondadas */
+       background-color: var(--vinho); /* Cor de fundo */
+       color: white; /* Cor do texto */
+       border: none;
+       text-align: center;
+       font-size: 1.1rem;
+       font-weight: 500;
+       cursor: pointer;
+   }
+
+   main section.porcoes{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+
+main section .porcoes-1-filho{
+    margin: 0% 0%;
+    /* border: 2px solid rgb(0, 255, 81); */
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+
+main section .porcoes-1-filho h2{
+    /* border: 2px solid rgb(0, 255, 81); */
+    font-size: 1.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .porcoes-2-filho{
+    /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+main section .porcoes-div{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0rem;
+    align-items: center;
+}
+
+main section .porcoes-div img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 35vh;
+    border-radius: 10%;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div h3{
+    font-size: 1.2rem;
+    /* border: solid 2px blue; */
+    font-weight: 600;
+}
+
+main section .porcoes-div h5{
+    /* border: solid 2px blue; */
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid 2px blue; */
+    /* gap: 2rem; */
+    align-items: center;
+    width: 70%;
+    height: 5vh;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor h4{
+    font-size: 1rem;
+    /* border: solid 2px blue; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+    height: 100%;
+}
+
+main section .btn10{
+    width: 50%;
+    height: 5vh;
+    border-radius: 50px; 
+    border: 10px solid #96298b;
+    background-color: var(--vinho); 
+    color: white; 
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+main section .btn10:hover{
+    transition: 0.3s;
+    background: var(--white);
+    color: #962929;
+    border: 1.5px solid #962929;
+} 
+
+footer{
+    margin-top: 10%;
+    /* border: blue solid 2px; */
+    background-color: #f0eeee;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .footer{
+    padding-top: 0px;
+    /* border: solid 2px red; */
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    /* box-shadow: 0 0.02rem 0.3rem var(--vinho); */
+}
+
+footer .footer .lado-esquerdo{
+    /* border: blue solid 2px; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer .lado-esquerdo img{
+    /* border: solid green 2px; */
+    width: 35%;
+    /* height: 80%; */
+}
+
+footer .footer .meio{
+    /* border: solid green 2px; */
+    /* height: 100%; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+footer .footer .meio h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: solid green 2px; */
+    height: 17%;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+footer .footer .meio .icons-contato{
+    /* border: solid rgb(21, 0, 128) 2px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    width: 40%;
+    gap: 0.1rem;
+    height: 15%;
+}
+
+footer .footer .meio .icons-contato a{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.frases-fale-conosco{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 90%;
+    gap: 0.2rem;
+}
+
+.fale-conosco-icons h6{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    font-size:0.5rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+footer .footer .lado-direito{
+    width: 32%;
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 1.2rem; */
+    gap: 1rem;
+}
+
+footer .footer .lado-direito h4{
+   /* border: solid rgb(0, 166, 255) 2px;  */
+   width: 100%;
+   height: 16%;
+   font-size: 0.6rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   /* height: 7vh; */
+}
+
+footer .footer .lado-direito img{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    width: 90%;
+    height: 60%;
+}
+
+footer .parte-final{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .parte-final h3{
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+   
+}
+
+@media (min-width: 1000px) and (max-width: 1300px){
+    
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+    
+    header #menuResponsivo ul{
+        flex-direction: column;
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .nav-itemUm{
+        display: none;
+    }
+
+    header .nav-itemDois{
+        display: none;
+    }
+
+    header .nav-itemTres{
+        display: none;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100vw;
+        margin-top: 10%;
+    }
+
+    main section.home{
+        height: 50vh;
+    }
+
+    main section .home-filho-nova{
+        justify-content: space-around;
+    }
+
+    main section .home-text{
+        width: 50%;
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+
+    main section .home-text > h4{
+        font-size: 1.5rem; 
+        /* border: solid 2px rgb(56, 168, 57); */
+    }
+      
+    main section .home-text > h1{
+          font-size: 1.2rem; 
+          /* border: solid 2px rgb(255, 0, 225); */
+    }
+
+    main section img{
+        display: flex;
+        /* padding: 2%; */
+        width: 360px;
+        height: 240px;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 2px rgb(76, 0, 255); */
+    }
+    /* essa main section está errada, deveria ter especificado melhor o código */
+    
+    main section.destaque{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    
+    main section .destaque-filho-um h2{
+        /* border: 1px solid rgb(0, 255, 81); */
+        color: #962929;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    main section .destaque-filho-dois{
+        /* border: 1px solid red; */
+        background: var(--white);
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        display: flex;
+        width: 100%;
+        padding: 2% 2%;
+        height: 40vh;
+    }
+    
+    main section .destaque-1{
+        /* border: 2px solid rgb(8, 174, 61); */
+        box-shadow: 0.05rem 0 0.5rem var(--vinho);
+        display: flex;
+        width: 100%;
+        /* gap: 1.5rem; */
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        flex-basis: calc(25% - 1rem);
+    }
+    
+    main section .destaque-1 img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+    }
+    
+    main section .destaque-1 a h4{
+        font-size: 1rem;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+    
+    main section.combos{
+        /* border: 1.5px red solid ; */
+        align-items: center;
+    }
+    
+    main section .combos-filho-um{
+        margin: 2% 0%;
+    }
+    
+    main section .combos-filho-dois{
+        /* border: 2px solid rgb(0, 255, 81); */
+        height: 60vh;
+    }
+    
+    main section .combos-div1{
+        /* border: solid 2px blue; */
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main section .combos-div1 .image-01{
+        width: 250px;
+        height: 250px;
+    }
+    
+    main section .combos-div1 .image-02{
+        width: 250px;
+        height: 250px;
+    }
+    
+    main section .combos-div1 .icons-combos{
+        width: 250px;
+        height: 5vh;
+    }    
+     
+    main section .combos-div1 .icons-combos .esqueci-urgente h4{
+        font-size: 1.2rem;
+    }
+    
+    main section .combos-div1 .icons-combos .esqueci-outro{
+        /* border: solid 1px green; */
+        display:none;
+    }
+    
+    main section .combos-div1 h6{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+
+    main section.refeicoes{
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        gap: 0rem;
+   }
+   
+   main section .refeicoes-1-filho{
+       margin: 2% 2%;
+       text-align: center;
+       height: 15%;
+       width: 50%;
+   }
+   
+   main section .refeicoes-1-filho h2{
+       font-size: 1.4rem;
+       font-weight: 500;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   main section .refeicoes-2-filho{
+       /* border: 2.5px solid rgb(0, 255, 81); */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       gap: 2rem;
+       height: 100%;
+       flex-wrap: wrap;
+   }
+   
+   main section .refeicoes-div{
+       /* border: solid 2px blue; */
+       display: flex;
+       width: 30%;
+       height: 100%;
+       gap: 0.5rem;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       flex-basis: calc(100% - 1rem);
+   }
+   
+   main section .refeicoes-div img{
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+       width: 30%;
+       height: 50%;
+       border-radius: 10%;
+   }
+   
+   main section .refeicoes-div h3{
+       /* border: solid 2px blue; */
+       font-size: 1.2rem;
+       font-weight: 700;
+   }
+   
+   main section .refeicoes-div h5{
+       /* border: solid 2px blue; */
+       font-size: 1rem;
+       font-weight: 400;
+       width: 100%;
+       height: 6vh;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor{
+       display: flex;
+       gap: 0.3rem;
+       align-items: center;
+       /* border: solid 2px blue; */
+       width: 30%;
+       height: 5vh;      
+   }
+   
+   main section .refeicoes-div .refeicoes-2-filho-texto-menor h4{
+       font-size: 1rem;
+       font-weight: 500;
+       height: 100%;
+       width: 50%;
+       /* border: solid 2px blue; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .btn1{
+       width: 15%;
+       height: 7%;
+       border-radius: 50px; /* Bordas arredondadas */
+       background-color: var(--vinho); /* Cor de fundo */
+       color: white; /* Cor do texto */
+       border: none;
+       text-align: center;
+       font-size: 1.2rem;
+       font-weight: 500;
+       cursor: pointer;
+   }
+   
+   .btn1:hover{
+       transition: 0.3s;
+       background: var(--white);
+       color: #962929;
+       border: 1.5px solid #962929;
+   }
+
+   main section.porcoes{
+    /* border: 1.5px red solid ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+
+main section .porcoes-1-filho{
+    margin: 0% 0%;
+    /* border: 2px solid rgb(0, 255, 81); */
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+
+main section .porcoes-1-filho h2{
+    /* border: 2px solid rgb(0, 255, 81); */
+    font-size: 1.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .porcoes-2-filho{
+    /* border: 2px solid rgb(0, 255, 81); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+main section .porcoes-div{
+    /* border: solid 2px blue; */
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+main section .porcoes-div img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    height: 40vh;
+    border-radius: 10%;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div h3{
+    font-size: 1.5rem;
+    /* border: solid 2px blue; */
+    font-weight: 600;
+}
+
+main section .porcoes-div h5{
+    /* border: solid 2px blue; */
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* border: solid 2px blue; */
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid 2px blue; */
+    /* gap: 2rem; */
+    align-items: center;
+    width: 60%;
+    height: 5vh;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+main section .porcoes-div .porcoes-2-filho-texto-menor h4{
+    font-size: 1.2rem;
+    /* border: solid 2px blue; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+    height: 100%;
+}
+
+main section .btn10{
+    width: 40%;
+    height: 6vh;
+    border-radius: 50px; 
+    border: 10px solid #96298b;
+    background-color: var(--vinho); 
+    color: white; 
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+main section .btn10:hover{
+    transition: 0.3s;
+    background: var(--white);
+    color: #962929;
+    border: 1.5px solid #962929;
+} 
+
+footer{
+    margin-top: 10%;
+    /* border: blue solid 2px; */
+    background-color: #f0eeee;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .footer{
+    padding-top: 0px;
+    /* border: solid 2px red; */
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    /* box-shadow: 0 0.02rem 0.3rem var(--vinho); */
+}
+
+footer .footer .lado-esquerdo{
+    /* border: blue solid 2px; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer .lado-esquerdo img{
+    /* border: solid green 2px; */
+    width: 45%;
+    /* height: 80%; */
+}
+
+footer .footer .meio{
+    /* border: solid green 2px; */
+    /* height: 100%; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+footer .footer .meio h4{
+    /* border: solid green 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 16%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .footer .meio .icons-contato{
+    /* border: solid rgb(21, 0, 128) 2px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    width: 55%;
+    gap: 0.1rem;
+    height: 15%;
+}
+
+footer .footer .meio .icons-contato a{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.frases-fale-conosco{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 90%;
+    gap: 0.45rem;
+}
+
+.fale-conosco-icons h6{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    font-size:0.8rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+footer .footer .lado-direito{
+    width: 32%;
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 1.2rem; */
+    gap: 2rem;
+}
+
+footer .footer .lado-direito h4{
+   /* border: solid rgb(0, 166, 255) 2px;  */
+   width: 100%;
+   height: 16%;
+   font-size: 1rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   /* height: 7vh; */
+}
+
+footer .footer .lado-direito img{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    width: 90%;
+    height: 50%;
+}
+
+footer .parte-final{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .parte-final h3{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+
+
+
+   
+}  
+
+
+
+/* MODO JANELA DESKTOP */
+
+/* EXEMPLO DE COMO FICA A RESPONSIVIDADE */
+
+/* 
+@media (min-width: 481px) and (max-width: 725px)
+@media (min-width: 725px) and (max-width: 1200px) 
+*/
+
