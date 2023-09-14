@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body id="bodyLogin">
+    <header>
+        <a href="versao-nova.html"><img src="./img/logo2.0.png" alt=""></a>
+        <nav id="menuResponsivo">
+            <ul>
+                <li class="nav-item"><a href="cardapio.html">CARDÁPIO</a></li>
+                <!-- <li class="nav-item"><a href="#combos">COMBOS</a></li>
+                <li class="nav-item"><a href="#refeicoes">REFEIÇÕES</a></li>
+                <li class="nav-item"><a href="#porcoes">PORÇÕES</a></li> -->
+                <li class="nav-item"><a href="sobre.html">SOBRE</a></li>
+                <li class="nav-item"><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="hamburguer" id="menuBarrinhas">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="login-titulo">
+                <h1>4FOOD</h1>
+            </div>
+
+            <div class="login">
+                <div class="centralizar-login">
+                    <div class="login-digitar-1">
+                        <label for="">Login:</label>
+                        <input type="text" id="login">
+                    </div>
+                    <div class="login-digitar-2">
+                        <label for="">Senha:</label>
+                        <!-- <input type="text" id="senha"> -->
+
+                        <input type="text" id="password"/>
+                        <button onclick="mudarInputPassword(event)">
+                            <i class='bx bxs-low-vision'></i>
+                        </button>
+
+                        <!-- <a onclick="mudarInputPassword(event)" href=""><i class='bx bxs-low-vision'></i></a> -->
+                    </div>
+                </div>    
+
+                <button onclick="limparCampos()">Acessar</button>
+                <!-- <input type="text"> -->
+
+                <h4>Fazer cadastro</h4>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="lado-esquerdo">
+                  <img src="img/logo-4FOOD-em-pé-PNG.png" alt="">
+            </div>
+
+            <div class="meio">
+                <h4>CONTATO</h4>
+                <div class="icons-contato">
+                    <a class='contado-icons' href="https://mail.google.com/" target="_blank"><i class='bx bx-envelope'></i></a>
+                    <a class='contado-icons' href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                    <a class='contado-icons' href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a class='contado-icons' href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a class='contado-icons' href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a class='contado-icons' href="https://goo.gl/maps/XYeQumuxk4yqnSpW8" target="_blank"><i class='bx bxs-location-plus' ></i></a>
+                </div>
+                
+                <div class="frases-fale-conosco">
+                    <h4>FALE CONOSCO</h4>
+                    <a class='fale-conosco-icons' href="sobre.html#parte-002"><h6>Precisa de ajuda</h6></a>
+                    <a class='fale-conosco-icons' href="sobre.html#parte-003"><h6>Política de privacidade</h6></a>
+                    <a class='fale-conosco-icons' href="sobre.html#parte-004"><h6>Termos de uso</h6></a>
+                    <a class='fale-conosco-icons' href="sobre.html#parte-005"><h6>Venha para o time</h6></a>            
+                </div>
+            </div>
+
+            <div class="lado-direito">
+                <h4>FORMAS DE PAGAMENTO</h4>
+                <img src="img/footer-projeto/01.png" alt="">
+            </div>
+        </div>
+        
+        <div class="parte-final">
+            <h3>4 FOOD © 2023 - Todos os direitos reservados I CNPJ 00.000.000/0000-00</h3>
+        </div>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+</html>

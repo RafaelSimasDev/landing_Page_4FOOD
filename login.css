@@ -1,0 +1,1697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    color: #962929;
+    overflow-x: hidden;
+}
+
+:root{
+    --vinho: #962929;
+    --white: #fcfcfc;
+    --vinho2: #ef3030;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--vinho);
+    /* margin: 0px 40px; */
+    background-image: url(img/principal-home/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    /* width: 100vw;
+     height: 100vh; */
+}
+
+#bodyLogin.activeLogin{
+    height: calc(100vh - 10vh);
+    overflow: hidden;
+}
+
+header{
+    /* border: 2px solid red; */
+    /* background: var(--white); */
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    padding: 0px 30px;
+    /* position: fixed;
+    top: 0; */
+    background-color: var(--white);
+    /* border: solid 3px rgb(3, 1, 1); */
+}
+
+header img{
+    /* border: 2px solid red; */
+    width: 180px;
+    height: 8vh;
+}
+
+header #menuResponsivo ul{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* height: 160%; */
+    /* border: solid 3px rgb(3, 1, 1); */
+}
+
+header #menuResponsivo ul li a{
+    color: #962929;
+    transition: 0.5s;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+header #menuResponsivo ul li a:hover{
+    color: var(--vinho2);
+}
+
+header .hamburguer{
+    width: 30px;
+    height: 30px;
+    /* background-color: black; */
+    /* border: solid 2px rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    
+   
+}
+
+header .hamburguer .bar{
+    width: 100%;
+    height: 2.5px;
+    /* background-color: black; */
+    background-color: #962929;
+    
+}
+
+header #menuResponsivo.active{
+    display: flex;
+    background-color: var(--white);
+    justify-content: center;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    align-items: center;
+    /* overflow-y: hidden; */
+    /* gap: 3rem; */
+    /* border: solid 2px rgb(9, 255, 0); */
+}
+
+main{
+    margin: 5% 0%;
+    width: 100%;
+    height: 70vh;
+    /* border: solid 2px royalblue; */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    /* background-color: #f5f5f5;   */
+}
+
+main section{
+    /* border: solid 2px red; */
+    background-color: #edecec; 
+    width:40%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+}
+
+main section .login-titulo{
+    /* border: solid 2px rgb(21, 0, 255); */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    text-align: center;
+}
+
+main section .login-titulo h1{
+    font-size: 96px;
+    text-shadow: 3px 5px 2px black;
+    /* border: #ef3030 2px solid; */
+}
+
+main section .login{
+    /* border: solid 2px rgb(21, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--white);
+    width: 80%;
+    height: 30vh;
+    border-radius: 12px;
+    gap: 1.2rem
+}
+
+main section .login .centralizar-login{
+    display: flex;
+    /* border: solid 2px rgb(255, 0, 191); */
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+main section .login .login-digitar-1{
+    /* border: solid 2px rgb(21, 0, 255); */
+    display: flex;
+    gap: 1.1rem;
+    /* align-items: start; */
+    /* flex-direction: column; */
+}
+
+main section .login .login-digitar-2{
+    /* border: solid 2px rgb(21, 0, 255); */
+    display: flex;
+    gap: 0.6rem;
+    /* align-items: start; */
+    /* flex-direction: column; */
+}
+
+main section .login .centralizar-login label{
+    /* border: #ef3030 2px solid;*/
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main section .login .centralizar-login input{
+    /* border: #ef3030 2px solid; */
+    border-radius: 8px;
+    padding: 0px 10px;
+    width: 60%;
+    font-size: 1rem;
+    border-width: 1.5px;
+    border-style: solid; 
+    border-color: #ccc;
+    /* border: 1px solid black; */
+    /* outline-color: #962929; */
+    /* outline-width: 0.5px; */
+    /* outline: 0.5px solid #962929; */
+}
+
+main section .login .centralizar-login input:focus{
+    outline: none;
+    /* outline: 2px solid black; */
+}
+
+main section .login .centralizar-login .login-digitar-2 button{
+    /* border: solid 2px red; */
+    border-width: 1.5px;
+    border-style: solid; 
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 10%;
+    height: 100%;
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+
+main section .login button{
+    border-width: 1.5px;
+    border-style: solid; 
+    border-color: #ccc;
+    width: 25%;
+    border-radius: 12px;
+    height: 11%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    /* color: #ef3030; */
+}
+
+main section .login button:hover{
+    transition: 0.5s;
+    /* border-width: 2px; */
+    border-style: solid; 
+    border-color: var(--vinho);
+}
+
+main section .login > h4{
+    font-weight: 400;
+    font-size: 1rem ;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+main section .login > h4:hover{
+    transition: 0.5s;
+    color: var(--vinho2);
+}
+
+footer{
+    width: 100vw;
+    margin-top: 10%;
+    /* border: blue solid 2px; */
+    background-color: #f0eeee;
+    box-shadow: 0 0.02rem 0.3rem var(--vinho);
+}
+
+footer .footer{
+    padding-top: 10px;
+    /* border: solid 2px red; */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    box-shadow: 0 0.01rem 0.2rem var(--vinho);
+}
+
+footer .footer .lado-esquerdo{
+    /* border: blue solid 2px; */
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer .lado-esquerdo img{
+    /* border: solid green 2px; */
+    width: 50%;
+    /* height: 80%; */
+}
+
+footer .footer .meio{
+    /* border: solid green 2px; */
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+footer .footer .meio h4{
+    /* border: solid green 2px; */
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer .footer .meio .icons-contato{
+    /* border: solid rgb(21, 0, 128) 2px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 0.5rem;
+    height: 20%;
+}
+
+footer .footer .meio .icons-contato a{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    color: #962929;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.frases-fale-conosco{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.fale-conosco-icons h6{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #962929;
+    text-decoration: underline;
+}
+
+footer .footer .lado-direito{
+    width: 32%;
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 1.2rem; */
+    gap: 3rem;
+}
+
+footer .footer .lado-direito h4{
+   text-align: center;
+   /* border: solid rgb(0, 166, 255) 2px;  */
+   font-size: 1.5rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   /* height: 7vh; */
+}
+
+footer .footer .lado-direito img{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    display: flex;
+    width: 90%;
+    height: 60%;
+}
+
+footer .parte-final{
+    /* border: solid rgb(0, 166, 255) 2px;  */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 0.02rem 0.05rem var(--vinho);
+    
+}
+
+footer .parte-final h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+@media screen and ( max-device-width: 480px){
+
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+
+    header #menuResponsivo ul{
+        flex-direction: column;
+        /* border: 1px solid red; */
+        display: flex;
+        /* position: absolute; */
+        /* gap: 2rem; */
+        /* margin-bottom: 300px; */
+        /* top: 0.1; */
+        /* overflow-y: hidden; */
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main section{
+        /* border: solid 2px red; */
+        background-color: #edecec; 
+        width:80%;
+        height: 80%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    main section .login-titulo{
+        /* border: solid 2px rgb(21, 0, 255); */
+        height: 25%;
+        width: 95%;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main section .login-titulo h1{
+        font-size: 60px;
+        text-shadow: 2px 2px 2px black;
+        /* border: #ef3030 2px solid; */
+    }
+
+    main{
+        margin: 5% 0%;
+        width: 100%;
+        height: 70vh;
+        /* border: solid 2px royalblue; */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        /* background-color: #f5f5f5;   */
+    }
+
+    /* main section .login{
+        border: solid 2px rgb(21, 0, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--white);
+        width: 80%;
+        height: 30vh;
+        border-radius: 12px;
+        gap: 1.2rem
+    } */
+
+
+    main section .login .centralizar-login{
+        display: flex;
+        /* border: solid 2px rgb(255, 0, 191); */
+        flex-direction: column;
+        gap: 0.6rem;
+        width:80%;
+    }
+
+    main section .login .login-digitar-1{
+        /* border: solid 2px rgb(21, 0, 255); */
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .login-digitar-2{
+        /* border: solid 2px rgb(21, 0, 255); */
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .centralizar-login label{
+        /* border: #ef3030 2px solid; */
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    main section .login .centralizar-login input{
+        /* border: #ef3030 2px solid; */
+        border-radius: 8px;
+        padding: 0px 0px;
+        width: 60%;
+        font-size: 0.8rem;
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        /* border: 1px solid black; */
+        /* outline-color: #962929; */
+        /* outline-width: 0.5px; */
+        /* outline: 0.5px solid #962929; */
+    }
+
+    main section .login .centralizar-login input:focus{
+        outline: none;
+        /* outline: 2px solid black; */
+    }
+
+    main section .login .centralizar-login .login-digitar-2 button{
+        /* border: solid 2px red; */
+        border-width: 1.5px;
+        border-style: solid; 
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 10%;
+        height: 100%;
+        font-size: 1rem;
+        /* text-align: center; */
+    }
+
+    main section .login button{
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        width: 45%;
+        border-radius: 12px;
+        height: 13%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        /* color: #ef3030; */
+    }
+
+    main section .login button:hover{
+        transition: 0.5s;
+        /* border-width: 2px; */
+        border-style: solid; 
+        border-color: var(--vinho);
+    }
+
+    main section .login > h4{
+        font-weight: 400;
+        font-size: 0.8rem ;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    main section .login > h4:hover{
+        transition: 0.5s;
+        color: var(--vinho2);
+    }
+
+    footer{
+        margin-top: 10%;
+        /* border: blue solid 2px; */
+        background-color: #f0eeee;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .footer{
+        padding-top: 0px;
+        /* border: solid 2px red; */
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        box-shadow: 0 0.02rem 0.03rem var(--vinho);
+    }
+    
+    footer .footer .lado-esquerdo{
+        /* border: blue solid 2px; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .footer .lado-esquerdo img{
+        /* border: solid green 2px; */
+        width: 60%;
+        /* height: 80%; */
+    }
+    
+    footer .footer .meio{
+        /* border: solid green 2px; */
+        /* height: 100%; */
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    footer .footer .meio h4{
+        /* border: solid green 2px; */
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    
+    footer .footer .meio .icons-contato{
+        /* border: solid rgb(21, 0, 128) 2px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* align-items: center; */
+        width: 70%;
+        gap: 0.1rem;
+        height: 15%;
+    }
+    
+    footer .footer .meio .icons-contato a{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        width: 13%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .frases-fale-conosco{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.2rem;
+    }
+    
+    .fale-conosco-icons h6{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        font-size:0.7rem;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    footer .footer .lado-direito{
+        width: 32%;
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display:none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* gap: 1.2rem; */
+        gap: 1rem;
+    }
+    
+    footer .footer .lado-direito h4{
+       text-align: center;
+       /* border: solid rgb(0, 166, 255) 2px;  */
+       font-size: 0.5rem;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       /* height: 7vh; */
+    }
+    
+    footer .footer .lado-direito img{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    footer .parte-final{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        box-shadow: 0 0.001rem 0.0001rem var(--vinho);
+    }
+    
+    footer .parte-final h3{
+        font-size: 0.4rem;
+        font-weight: 300;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 725px){
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+
+    header #menuResponsivo ul{
+        flex-direction: column;
+        /* margin-bottom: 200px; */
+        
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main section{
+        /* border: solid 2px red; */
+        background-color: #edecec; 
+        width:80%;
+        height: 80%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    main section .login-titulo{
+        /* border: solid 2px rgb(21, 0, 255); */
+        height: 30%;
+        width: 95%;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main section .login-titulo h1{
+        font-size: 70px;
+        text-shadow: 2px 2px 2px black;
+        /* border: #ef3030 2px solid; */
+    }
+
+    main{
+        margin: 5% 0%;
+        width: 100%;
+        height: 70vh;
+        /* border: solid 2px royalblue; */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        /* background-color: #f5f5f5;   */
+    }
+
+    main section .login .centralizar-login{
+        display: flex;
+        /* border: solid 2px rgb(255, 0, 191); */
+        flex-direction: column;
+        gap: 0.6rem;
+        width:80%;
+    }
+
+    main section .login .login-digitar-1{
+        /* border: solid 2px rgb(21, 0, 255); */
+        display: flex;
+        gap: 1.3rem;
+        width: 100%;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .login-digitar-2{
+        /* border: solid 2px rgb(21, 0, 255); */
+        width: 100%;
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .centralizar-login label{
+        /* border: #ef3030 2px solid; */
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    main section .login .centralizar-login input{
+        /* border: #ef3030 2px solid; */
+        border-radius: 8px;
+        padding: 0px 0px;
+        width: 60%;
+        font-size: 0.8rem;
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        /* border: 1px solid black; */
+        /* outline-color: #962929; */
+        /* outline-width: 0.5px; */
+        /* outline: 0.5px solid #962929; */
+    }
+
+    main section .login .centralizar-login input:focus{
+        outline: none;
+        /* outline: 2px solid black; */
+    }
+
+    main section .login .centralizar-login .login-digitar-2 button{
+        /* border: solid 2px red; */
+        border-width: 1.5px;
+        border-style: solid; 
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 10%;
+        height: 100%;
+        font-size: 1.2rem;
+        /* text-align: center; */
+    }
+
+    main section .login button{
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        width: 35%;
+        border-radius: 12px;
+        height: 13%;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        /* color: #ef3030; */
+    }
+
+    main section .login button:hover{
+        transition: 0.5s;
+        /* border-width: 2px; */
+        border-style: solid; 
+        border-color: var(--vinho);
+    }
+
+    main section .login > h4{
+        font-weight: 400;
+        font-size: 1rem ;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    main section .login > h4:hover{
+        transition: 0.5s;
+        color: var(--vinho2);
+    }
+
+    footer{
+        margin-top: 10%;
+        /* border: blue solid 2px; */
+        background-color: #f0eeee;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .footer{
+        padding-top: 0px;
+        /* border: solid 2px red; */
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        box-shadow: 0 0.02rem 0.03rem var(--vinho);
+    }
+    
+    footer .footer .lado-esquerdo{
+        /* border: blue solid 2px; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .footer .lado-esquerdo img{
+        /* border: solid green 2px; */
+        width: 50%;
+        /* height: 80%; */
+    }
+    
+    footer .footer .meio{
+        /* border: solid green 2px; */
+        /* height: 100%; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    footer .footer .meio h4{
+        /* border: solid green 2px; */
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    
+    footer .footer .meio .icons-contato{
+        /* border: solid rgb(21, 0, 128) 2px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* align-items: center; */
+        width: 50%;
+        gap: 0.1rem;
+        height: 15%;
+    }
+    
+    footer .footer .meio .icons-contato a{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        width: 13%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .frases-fale-conosco{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.2rem;
+    }
+    
+    .fale-conosco-icons h6{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        font-size:0.7rem;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    footer .footer .lado-direito{
+        width: 32%;
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display:none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* gap: 1.2rem; */
+        gap: 1rem;
+    }
+    
+    footer .footer .lado-direito h4{
+       text-align: center;
+       /* border: solid rgb(0, 166, 255) 2px;  */
+       font-size: 0.5rem;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       /* height: 7vh; */
+    }
+    
+    footer .footer .lado-direito img{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    footer .parte-final{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        box-shadow: 0 0.001rem 0.0001rem var(--vinho);
+    }
+    
+    footer .parte-final h3{
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 725px) and (max-width: 1000px){
+
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+
+    header #menuResponsivo ul{
+        flex-direction: column;
+        /* margin-bottom: 150px; */
+    }
+
+    header #menuResponsivo.active{
+        display: flex;
+        background-color: var(--white);
+        justify-content: center;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        
+        align-items: center;
+        /* overflow-y: hidden; */
+        /* gap: 3rem; */
+        /* border: solid 2px rgb(9, 255, 0); */
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main section{
+        /* border: solid 2px red; */
+        background-color: #edecec; 
+        width:80%;
+        height: 80%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    main section .login-titulo{
+        /* border: solid 2px rgb(21, 0, 255); */
+        height: 35%;
+        width: 95%;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main section .login-titulo h1{
+        font-size: 90px;
+        text-shadow: 2px 2px 2px black;
+        /* border: #ef3030 2px solid; */
+    }
+
+    main{
+        margin: 5% 0%;
+        width: 100%;
+        height: 80vh;
+        /* border: solid 2px royalblue; */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        /* background-color: #f5f5f5;   */
+    }
+
+    main section .login .centralizar-login{
+        display: flex;
+        /* border: solid 2px rgb(255, 0, 191); */
+        flex-direction: column;
+        gap: 0.6rem;
+        width:80%;
+    }
+
+    main section .login .login-digitar-1{
+        /* border: solid 2px rgb(21, 0, 255); */
+        display: flex;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .login-digitar-2{
+        /* border: solid 2px rgb(21, 0, 255); */
+        width: 100%;
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .centralizar-login label{
+        /* border: #ef3030 2px solid; */
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    main section .login .centralizar-login input{
+        /* border: #ef3030 2px solid; */
+        border-radius: 8px;
+        padding: 0px 0px;
+        width: 60%;
+        font-size: 1.2rem;
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        /* border: 1px solid black; */
+        /* outline-color: #962929; */
+        /* outline-width: 0.5px; */
+        /* outline: 0.5px solid #962929; */
+    }
+
+    main section .login .centralizar-login input:focus{
+        outline: none;
+        /* outline: 2px solid black; */
+    }
+
+    main section .login .centralizar-login .login-digitar-2 button{
+        /* border: solid 2px red; */
+        border-width: 1.5px;
+        border-style: solid; 
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 10%;
+        height: 100%;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+    main section .login button{
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        width: 35%;
+        border-radius: 15px;
+        height: 17%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        /* color: #ef3030; */
+    }
+
+    main section .login button:hover{
+        transition: 0.5s;
+        /* border-width: 2px; */
+        border-style: solid; 
+        border-color: var(--vinho);
+    }
+
+    main section .login > h4{
+        font-weight: 400;
+        font-size: 1rem ;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    main section .login > h4:hover{
+        transition: 0.5s;
+        color: var(--vinho2);
+    }
+
+
+    footer{
+        margin-top: 10%;
+        /* border: blue solid 2px; */
+        background-color: #f0eeee;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .footer{
+        padding-top: 0px;
+        /* border: solid 2px red; */
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        box-shadow: 0 0.02rem 0.03rem var(--vinho);
+    }
+    
+    footer .footer .lado-esquerdo{
+        /* border: blue solid 2px; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .footer .lado-esquerdo img{
+        /* border: solid green 2px; */
+        width: 45%;
+        /* height: 80%; */
+    }
+    
+    footer .footer .meio{
+        /* border: solid green 2px; */
+        /* height: 100%; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    footer .footer .meio h4{
+        /* border: solid green 2px; */
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    
+    footer .footer .meio .icons-contato{
+        /* border: solid rgb(21, 0, 128) 2px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* align-items: center; */
+        width: 40%;
+        gap: 0.1rem;
+        height: 15%;
+    }
+    
+    footer .footer .meio .icons-contato a{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        width: 13%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .frases-fale-conosco{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.2rem;
+    }
+    
+    .fale-conosco-icons h6{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        font-size:0.7rem;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    footer .footer .lado-direito{
+        width: 32%;
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display:none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* gap: 1.2rem; */
+        gap: 1rem;
+    }
+    
+    footer .footer .lado-direito h4{
+       text-align: center;
+       /* border: solid rgb(0, 166, 255) 2px;  */
+       font-size: 0.5rem;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       /* height: 7vh; */
+    }
+    
+    footer .footer .lado-direito img{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    footer .parte-final{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        box-shadow: 0 0.001rem 0.0001rem var(--vinho);
+    }
+    
+    footer .parte-final h3{
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1300px){
+
+    header #menuResponsivo{
+        gap: 2rem;
+        display: none;
+    }
+
+    header #menuResponsivo ul{
+        flex-direction: column;
+        /* margin-bottom: 200px; */
+    }
+
+    header #menuResponsivo.active{
+        display: flex;
+        background-color: var(--white);
+        justify-content: center;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 10vh);
+        /* bottom: 0; */
+        align-items: center;
+        /* overflow-y: hidden; */
+        /* gap: 6rem; */
+        /* border: solid 2px rgb(9, 255, 0); */
+    }
+
+    header img{
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 8vh;
+    }
+
+    header .hamburguer{
+        visibility: visible;
+        opacity: 1;
+        right: 10px;
+        position: absolute;
+    }
+
+    main section{
+        /* border: solid 2px red; */
+        background-color: #edecec; 
+        width:50%;
+        height: 90%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    main section .login-titulo{
+        /* border: solid 2px rgb(21, 0, 255); */
+        height: 35%;
+        width: 95%;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main section .login-titulo h1{
+        font-size: 90px;
+        text-shadow: 2px 2px 2px black;
+        /* border: #ef3030 2px solid; */
+    }
+
+    main section .login{
+        /* border: 1px solid blue; */
+        height: 50%;
+    }
+
+    main{
+        margin: 5% 0%;
+        width: 100%;
+        height: 80vh;
+        /* border: solid 2px royalblue; */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        /* background-color: #f5f5f5;   */
+    }
+
+    main section .login .centralizar-login{
+        display: flex;
+        /* border: solid 2px rgb(255, 0, 191); */
+        flex-direction: column;
+        gap: 0.6rem;
+        width:80%;
+    }
+
+    main section .login .login-digitar-1{
+        /* border: solid 2px rgb(21, 0, 255); */
+        display: flex;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .login-digitar-2{
+        /* border: solid 2px rgb(21, 0, 255); */
+        width: 100%;
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+        /* align-items: start; */
+        /* flex-direction: column; */
+    }
+
+    main section .login .centralizar-login label{
+        /* border: #ef3030 2px solid; */
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    main section .login .centralizar-login input{
+        /* border: #ef3030 2px solid; */
+        border-radius: 8px;
+        padding: 0px 0px;
+        width: 60%;
+        font-size: 1.2rem;
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        /* border: 1px solid black; */
+        /* outline-color: #962929; */
+        /* outline-width: 0.5px; */
+        /* outline: 0.5px solid #962929; */
+    }
+
+    main section .login .centralizar-login input:focus{
+        outline: none;
+        /* outline: 2px solid black; */
+    }
+
+    main section .login .centralizar-login .login-digitar-2 button{
+        /* border: solid 2px red; */
+        border-width: 1.5px;
+        border-style: solid; 
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 10%;
+        height: 100%;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+    main section .login button{
+        border-width: 1.5px;
+        border-style: solid; 
+        border-color: #ccc;
+        width: 25%;
+        border-radius: 15px;
+        height: 17%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        /* color: #ef3030; */
+    }
+
+    main section .login button:hover{
+        transition: 0.5s;
+        /* border-width: 2px; */
+        border-style: solid; 
+        border-color: var(--vinho);
+    }
+
+    main section .login > h4{
+        font-weight: 400;
+        font-size: 1.2rem ;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    main section .login > h4:hover{
+        transition: 0.5s;
+        color: var(--vinho2);
+    }
+
+    footer{
+        margin-top: 10%;
+        /* border: blue solid 2px; */
+        background-color: #f0eeee;
+        box-shadow: 0 0.02rem 0.3rem var(--vinho);
+    }
+    
+    footer .footer{
+        padding-top: 0px;
+        /* border: solid 2px red; */
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        box-shadow: 0 0.02rem 0.03rem var(--vinho);
+    }
+    
+    footer .footer .lado-esquerdo{
+        /* border: blue solid 2px; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .footer .lado-esquerdo img{
+        /* border: solid green 2px; */
+        width: 40%;
+        /* height: 80%; */
+    }
+    
+    footer .footer .meio{
+        /* border: solid green 2px; */
+        /* height: 100%; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    footer .footer .meio h4{
+        /* border: solid green 2px; */
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    
+    footer .footer .meio .icons-contato{
+        /* border: solid rgb(21, 0, 128) 2px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* align-items: center; */
+        width: 30%;
+        gap: 0.1rem;
+        height: 15%;
+    }
+    
+    footer .footer .meio .icons-contato a{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        width: 13%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    .frases-fale-conosco{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.2rem;
+    }
+    
+    .fale-conosco-icons h6{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        font-size:0.9rem;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    footer .footer .lado-direito{
+        width: 32%;
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display:flex;
+        flex-direction: column;
+        justify-content: start  ;
+        text-align: center;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    
+    footer .footer .lado-direito h4{
+       text-align: center;
+       /* border: solid rgb(0, 166, 255) 2px;  */
+       font-size: 0.7rem;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       /* height: 7vh; */
+    }
+    
+    footer .footer .lado-direito img{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        display: flex;
+        width: 80%;
+        height: 70%;
+    }
+    
+    footer .parte-final{
+        /* border: solid rgb(0, 166, 255) 2px;  */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        box-shadow: 0 0.001rem 0.0001rem var(--vinho);
+    }
+    
+    footer .parte-final h3{
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    
+
+
+    
+
+
